@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220922 10:42:42.800" rpa="false" schemaversion="3">
+<suite id="s1" name="Difflibrary" source="C:\Users\bruno.vittor\Documents\estudo_automação\Automacao_Robot_avancado\Aut_Amazon\Tarefa 03\difflibrary.robot">
+<test id="s1-t1" name="Comparar dois conteúdos" line="5">
+<kw name="Compare &quot;teste_diff_01.txt&quot; e &quot;teste_diff_02.txt&quot;" sourcename="Compare &quot;${arquivo_01}&quot; e &quot;${arquivo_02}&quot;">
+<kw name="Diff Files" library="DiffLibrary">
+<arg>${arquivo_01}</arg>
+<arg>${arquivo_02}</arg>
+<doc>Diff two text files</doc>
+<msg timestamp="20220922 10:42:42.833" level="INFO">file1: teste_diff_01.txt</msg>
+<msg timestamp="20220922 10:42:42.833" level="INFO">file2: teste_diff_02.txt</msg>
+<msg timestamp="20220922 10:42:42.834" level="INFO">C:\Users\bruno.vittor\AppData\Local\Programs\Python\Python310\lib\site-packages\DiffLibrary\bin\diff\diff.exe --strip-trailing-cr  "teste_diff_01.txt" "teste_diff_02.txt"</msg>
+<msg timestamp="20220922 10:42:42.918" level="INFO">2c2
+&lt; # comentario de teste
+\ No newline at end of file
+---
+&gt; # teste de comentario
+\ No newline at end of file</msg>
+<msg timestamp="20220922 10:42:42.919" level="FAIL">differences found between teste_diff_01.txt and teste_diff_02.txt</msg>
+<status status="FAIL" starttime="20220922 10:42:42.833" endtime="20220922 10:42:42.921"/>
+</kw>
+<status status="FAIL" starttime="20220922 10:42:42.833" endtime="20220922 10:42:42.921"/>
+</kw>
+<status status="FAIL" starttime="20220922 10:42:42.832" endtime="20220922 10:42:42.922">differences found between teste_diff_01.txt and teste_diff_02.txt</status>
+</test>
+<status status="FAIL" starttime="20220922 10:42:42.802" endtime="20220922 10:42:42.924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Difflibrary">Difflibrary</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

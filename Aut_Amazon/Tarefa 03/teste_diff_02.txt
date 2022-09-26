@@ -1,0 +1,2 @@
+teste de diff library
+# teste de comentario
